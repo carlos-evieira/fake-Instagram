@@ -8,7 +8,6 @@
 
   <body>
     <header>
-      <% publicacoes.forEach( publicacao => { %> 
       <div class="container header">
         <div id="logo">
           <img src="/img/logo.png" />
@@ -21,23 +20,24 @@
         <nav>
           <a href="/publicar">
             <img
-              src="/img/icons/plus.svg"
-              alt="Adicionar Publicação"
+            src="/img/icons/plus.svg"
+            alt="Adicionar Publicação"
               title="Adicionar Publicação"
-            />
-          </a>
-          <a href="/home">
-            <img src="/img/icons/home.svg" />
-          </a>
-          <a href="">
-            <div class="avatar-content">
-              <img class="avatar" src="/img/avatar-example.png" />
-              <b><%= user.nome %></b>
+              />
+            </a>
+            <a href="/home">
+              <img src="/img/icons/home.svg" />
+            </a>
+            <a href="">
+              <div class="avatar-content">
+                <img class="avatar" src="/img/avatar-example.png" />
+                <b><%= user.nome %></b>
             </div>
           </a>
         </nav>
       </div>
     </header>
+    <% publicacoes.forEach( publicacao => { %> 
     <main class="container content">
       <div class="card">
         <div class="card-header">
